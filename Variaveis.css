@@ -1,0 +1,11 @@
+:root{
+    /* cores principais ou em destaque*/
+    --color-destaque: purple;
+    --color-bg:#050816;
+    --color-bg-secondary:#0b1023;
+    --color-bg-card:#111827;
+    /* cores para textos */
+    --color-text:#ffff;
+    --color-text-secondary:#b3b8c5;
+    --color-text-muted:#7b8294;
+}

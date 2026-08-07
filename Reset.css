@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    user-select: none;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    background:var(--color-bg-secondary);
+    overflow-x: hidden;
+}
+#contato{
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+input, textarea{
+    width: 100%;
+    max-width: 100%;
+}

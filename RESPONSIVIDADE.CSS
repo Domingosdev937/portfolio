@@ -1,0 +1,61 @@
+@media screen and (min-width:768px){
+
+    
+    section#ficha img.foto{
+        width: 350px;
+    }
+    
+    #container-habilidade{
+        display: flex;
+    }
+    .container-projeto{
+        padding: 10px;
+        flex-direction: row-reverse;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    footer .ger{
+        display: flex;
+        justify-content: space-between;
+        margin:0 40px;
+    }
+
+    .titulo {
+        text-align: left;
+        margin: 9px 0;
+    }
+
+    .titulo h3{
+        font-size: 26px;
+    }
+
+    .titulo p{
+        color: var(--color-text-muted);
+        font-weight: bold;
+    }
+    nav#menu ul .habilidades, .sobre{
+        display: none;
+    }
+}
+@media screen and (max-width:768){
+    
+    #container-habilidade{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:400px) {
+    section#ficha > .informacoes-perfil .h2{
+        margin: 20px;
+    }
+    #contato{
+        width: 95%;
+    }
+    #menu-Drop{
+        display: block;
+    }
+}

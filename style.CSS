@@ -1,0 +1,391 @@
+
+/* Estilizando o header/cabeçalho */
+html{
+    scroll-behavior: smooth;
+}
+header{
+    /* background: var(--color-bg-card); */
+    background: rgb(122, 23, 122, .9);
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* estilizando a minha ficha ou minhas informações do perfil */
+
+main{
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+}
+
+section#ficha{
+    background:var(--color-bg);
+    border-radius: 8px;
+    padding: 20px;
+    grid-column: 2;
+}
+
+section#ficha img.foto{
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+
+    border: 3px solid purple;
+    margin-bottom: 16px;
+    display: block;
+    margin: auto;
+}
+
+section#ficha h2{
+    color: var(--color-destaque);
+    margin: 20px 0;
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+section#ficha p{
+    color: var(--color-text);
+    font-weight: bold;
+
+    margin: 15px 0;
+    text-align: center;
+}
+
+section#ficha button{
+    padding: 8px 16px;
+    background: transparent;
+    color:var(--color-destaque);
+
+    cursor: pointer;
+    border: 1px solid  var(--color-destaque);
+    display: block;
+    margin: auto;
+}
+.informacoes-perfi{
+    margin: 10px 0;
+}
+
+#redes{
+    font-size: 36px;
+    transition: .3s;
+}
+
+#redes:hover{
+    transform: scale(1.1);
+}
+/* Estilizando as minhas habilidades */
+
+section#maisinfo{
+    grid-column: 2;
+}
+section#maisinfo .titulo{
+    text-align: center;
+    margin: 30px 0;
+}
+section#maisinfo h2{
+    margin: 20px 0;
+    color: var(--color-text);
+}
+section#maisinfo h2 span{
+    color: var(--color-destaque);
+}
+#container-habilidade{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Estilizando os icones */
+i {
+  font-size: 30px;
+  margin: 10px;
+  color: purple;
+}
+
+#icone{
+    font-size: 90px;
+}
+#container-habilidade .item{
+   border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+    background: #151320;
+    cursor: pointer;
+}
+
+#container-habilidade .item i, h3, p{
+    color: #fff;
+}
+#container-habilidade .item .bolinha{
+    font-size: 80px;
+    border-radius: 50%;
+    color: purple;
+}
+
+/* hover nos icones */
+.item:hover{
+    transition: .3s;
+    box-shadow: 0 0 16px purple;
+    transform: translateY(-8px);
+}
+
+.item:hover .fa-html5{
+    filter: drop-shadow(0 0 8px #e34f26);
+   
+}
+.item:hover .fa-css3-alt{
+    filter: drop-shadow(0 0 8px #1572b6);
+   
+}
+.item:hover .fa-js{
+     filter: drop-shadow(0 0 8px #f7df1e);
+}
+
+.item:hover .fa-mobile-screen-button{
+    filter: drop-shadow(0 0 8px #8b5cf6);
+}
+.item:hover .fa-github{
+     filter: drop-shadow(0 0 8px #6e5494);
+}
+.item:hover .fa-people-group{
+   filter: drop-shadow(0 0 8px #38bdf8);
+}
+
+
+/* #container-habilidade .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+
+/* ESTILIZANDO O SOBRE  */
+
+div#sobre-mim{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+div#sobre-mim details>p{
+    padding: 10px 0;
+    color: var(--color-text);
+    text-align: justify;
+}
+/* Estilizando os meus projetos */
+
+div#projetos{
+    width: 100%;
+    margin-top: 20px;
+}
+
+div#projetos .titulos-projetos h3{
+    color: var(--color-destaque);
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+.titulos-projetos h2{
+    color: var(--color-text);
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.titulos-projetos p{
+    color: var(--color-text);
+    margin-top:15px;
+}
+
+.titulos-projetos p span{
+    display: block;
+}
+/* estilizando as cards do projetos */
+
+div#container-projetos{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+div#container-projetos .projeto{
+    display: flex;
+    flex-direction: column;
+    margin: 13px 0;
+
+    background:var(--color-bg-card);
+    padding: 10px;
+    border-radius: 8px;
+}
+.projeto .foto{
+    width: 100%;
+    aspect-ratio:16/9;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.info-projeto h3{
+    color: var(--color-text);
+    margin: 10px 0;
+}
+.info-projeto p{
+    color: var(--color-text-muted);
+    font-weight: bold;
+    margin: 16px 0;
+}
+.info-projeto>.links-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.links-projetos a {
+    border: 1px solid var(--color-destaque);
+    border-radius: 7px;
+    padding: 4px 10px;
+}
+
+/* Estilizando a secção do formulário de contacto */
+
+
+div#contato>.titulo-contato{
+    text-align: center;
+    margin: 16px 0;
+    color: var(--color-text);
+}
+.titulo-contato h3{
+    color: var(--color-destaque);
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-destaque);
+    padding: 6px 8px;
+
+    
+}
+
+summary span{color: var(--color-text);}
+
+form {
+    margin-top: 20px;
+    background:var(--color-bg-card);
+    border-radius: 8px;
+    border: 1px solid var(--color-text-muted);
+    padding: 6px;
+}
+.entrada-de-dados{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.entrada-de-dados .input1 .rotulo{
+    display: block;
+    text-align: left;
+
+    color: var(--color-text);
+    font-weight: bold;
+    margin: 3px 0;
+}
+
+.input1 input{
+    padding: 6px 10px;
+    background: transparent;
+    border: 1px solid var(--color-text-muted);
+
+    border-radius: 7px;
+    outline: none;
+    color: var(--color-text);
+}
+
+.input-assunto .rotulo{
+    display: block;
+    text-align: left;
+    margin: 3px 0;
+
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.input-assunto input{
+    width: 100%;
+
+    padding: 6px 10px;
+    background: transparent;
+    border: 1px solid var(--color-text-muted);
+
+    border-radius: 7px;
+    outline: none;
+    color: var(--color-text);
+}
+.descricao-assunto .rotulo{
+    display: block;
+    text-align: left;
+    margin: 3px 0 ;
+
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.descricao-assunto textarea{
+    width: 100%;
+    padding: 3px ;
+
+    background: transparent;
+    border: 1px solid var(--color-text-muted);
+
+    border-radius: 7px;
+    outline: none;
+    color: var(--color-text);
+}
+#btn-form{
+    width: 100%;
+    color: var(--color-text);
+    cursor: pointer;
+
+    padding: 6px 0;
+    background: var(--color-destaque);
+    border-radius: 7px;
+
+    border: 1px solid var(--color-destaque);
+    outline: none;
+    margin-bottom: 20px;
+}
+#protecao{
+    text-align: center;
+    color: var(--color-text);
+}
+
+/* Estilizando o footer/Rodapé */
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+footer h3{
+    color: var(--color-text);
+}
+footer h3 span{
+    color: var(--color-destaque);
+}
+footer p{
+    color: var(--color-text);
+}
+footer .copyrite{
+    border-top: 1px solid var(--color-text-muted);
+}
