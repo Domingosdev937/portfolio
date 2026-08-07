@@ -1,2 +1,1 @@
-# portfolio
-My personal portfolio built with HTML, CSS and JavaScript.
+Este portfólio representa parte da minha jornada como desenvolvedor. Ainda existem funcionalidades e detalhes a melhorar, mas continuarei a atualizá-lo à medida que desenvolvo novos projetos e aprimoro as minhas competências.
